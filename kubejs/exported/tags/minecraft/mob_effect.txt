@@ -1,0 +1,52 @@
+To refresh this file, delete it and run /reload command again! Last updated: May 6, 2023, 12:41:28 AM
+
+#neapolitan:unaffected_by_vanilla_scent
+- supplementaries:overencumbered? (from supplementaries-1.19.2-2.3.9.jar)
+
+#artifacts:antidote_vessel_cancellable
+- hmag:combustion (from hmag-forge-mc1.19.2-6.1.9.jar)
+- hmag:ender_rage (from hmag-forge-mc1.19.2-6.1.9.jar)
+
+#the_bumblezone:incense_candle/disallowed_effects
+
+#hmag:randomberry_gives
+- minecraft:dolphins_grace (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:haste (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:hunger (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:invisibility (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:jump_boost (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:mining_fatigue (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:regeneration (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:resistance (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:slowness (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:slow_falling (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:speed (from hmag-forge-mc1.19.2-6.1.9.jar)
+- minecraft:weakness (from hmag-forge-mc1.19.2-6.1.9.jar)
+- hmag:darkness_resistance (from hmag-forge-mc1.19.2-6.1.9.jar)
+- alexsmobs:knockback_resistance? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- alexsmobs:oiled? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- alexsmobs:poison_resistance? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- alexsmobs:soulsteal? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- apotheosis:knowledge? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- apotheosis:sundering? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:chilled? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:clarity? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:explosion_resistant? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:lightning_resistant? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:magic_resistant? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- cofh_core:shocked? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- ecologics:slippery? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- farmersdelight:nourished? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- immersiveengineering:flammable? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- mowziesmobs:poison_resist? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- neapolitan:harmony? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- quark:resilience? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- seasonals:thorn_resistance? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- atmospheric:relief? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- atmospheric:worsening? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- upgrade_aquatic:repellence? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- upgrade_aquatic:vibing? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- collectorsreap:corrosion? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- collectorsreap:volatility? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- habitat:blast_endurance? (from hmag-forge-mc1.19.2-6.1.9.jar)
+- habitat:prickling? (from hmag-forge-mc1.19.2-6.1.9.jar)
