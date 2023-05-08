@@ -18,7 +18,7 @@
 	#Range: > 1
 	"Max Level" = 1000
 	#shold levels be determined using an exponential forumula?
-	"Use Exponential Formula" = false
+	"Use Exponential Formula" = true
 	#=====LEAVE -1 VALUE UNLESS YOU WANT STATIC LEVELS=====
 	#Replacing the -1 and adding values to this list will set the xp required to advance for each
 	#level manually.  Note that the number of level settings you enter into this list
@@ -33,7 +33,7 @@
 	#How much experience should players lose when they die?
 	#zero is no loss, one is lose everything
 	#Range: 0.0 ~ 1.0
-	"Loss on death" = 0.05
+	"Loss on death" = 0.1
 	#should loss of experience cross levels?
 	#for example, if true, a player with 1 xp above their current level would lose the
 	#[Loss on death] percentage of xp and fall below their current level.  However,
@@ -45,7 +45,7 @@
 	#the [Loss On Death] of the 20 xp above the level's base.
 	"Lose Only Excess" = true
 	#Modifies how much xp is earned.  This is multiplicative to the XP.
-	"Global Modifier" = 1.0
+	"Global Modifier" = 1.5
 
 	#Modifies xp gains for specific skills.  This is multiplicative to the XP.
 	[Levels."Skill Modifiers"]
@@ -62,15 +62,16 @@
 
 	#Settings for Exponential XP configuration
 	[Levels."EXPONENTIAL LEVELS"]
+		# Original Value Was: 250 * (1.104088505342588 ^ (1.1 * level))
 		#What is the x in: x * ([Power Base]^([Per Level] * level))
 		#Range: > 1
 		"Base XP" = 250
 		#What is the x in: [Base XP] * (x^([Per Level] * level))
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Power Base" = 1.104088404342588
+		"Power Base" = 1.042
 		#What is the x in: [Base XP] * ([Power Base]^(x * level))
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Per Level" = 1.1
+		"Per Level" = 1.42
 
 #Should requirements apply for the applicable action type
 [Requirements]
@@ -93,7 +94,7 @@
 [XP_Gains]
 	#how much of the original XP should be awarded when a player breaks a block they placed
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Reuse Penalty" = 0.0
+	"Reuse Penalty" = 10.0
 	#Should xp Gains from perks be added onto by configured xp values
 	"Perks Plus Configs" = false
 
@@ -215,10 +216,10 @@
 			[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic"]
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".movement_speed]
-					combat = 0.0
+					combat = 0.00001
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
-					combat = 0.001
+					combat = 1.00021
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
 					combat = 0.01

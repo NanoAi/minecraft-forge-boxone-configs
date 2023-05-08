@@ -10,7 +10,7 @@
 	#Only abandoned graves can have losses of items (based on the decay_time) [false/true|default:true]
 	loss_on_death_only_for_abandoned_grave = true
 	#Only stackable items can be lost on death [false/true|default:true]
-	loss_on_death_only_for_stackable_items = true
+	loss_on_death_only_for_stackable_items = false
 	#Prevents death outside the borders of the world [false/true|default:true]
 	prevent_death_outside_world_border = true
 	#Prevents death outside the build height [false/true|default:false]
@@ -30,19 +30,19 @@
 	sniffer_range = 5
 	#The chance that creatures appear after the contents of a grave are retrieved [0..100|default:0]
 	#Range: 0 ~ 100
-	chance_mob_on_grave_recovery = 0
+	chance_mob_on_grave_recovery = 52
 	#Percent of stolen experience by killing a player when PvP mode is enabled [0..100|default:30]
 	#Range: 0 ~ 100
 	pvp_stolen_xp = 30
 	#Knowledge of Death loss on death [0..500|default:0]
 	#Range: 0 ~ 500
-	knowledge_loss = 0
+	knowledge_loss = 2
 	#The chance that some items are lost on death [0..100|default:0]
 	#Range: 0 ~ 100
-	chance_loss_on_death = 0
+	chance_loss_on_death = 10
 	#The percentage of items that are lost on death [0..100|default:0]
 	#Range: 0 ~ 100
-	percent_loss_on_death = 0
+	percent_loss_on_death = 10
 	#Graveless Areas
 	no_grave_location = ["0, -300, 0, minecraft:overworld, 20"]
 

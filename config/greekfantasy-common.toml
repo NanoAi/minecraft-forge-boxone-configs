@@ -92,14 +92,14 @@
 	#Range: 0.0 ~ 100.0
 	nemean_lion_lightning_chance = 100.0
 	#Range: 0.0 ~ 100.0
-	shade_spawn_chance = 100.0
+	shade_spawn_chance = 10.0
 	#Range: 0.0 ~ 100.0
 	satyr_shaman_chance = 24.0
 	#Percent chance that creating a Charybdis also creates a Scylla
 	#Range: 0.0 ~ 100.0
 	scylla_spawn_chance = 55.0
 	satyr_song = "greekfantasy:greensleeves"
-	shade_immune_to_nonowner = true
+	shade_immune_to_nonowner = false
 	show_arachne_boss_bar = false
 	show_circe_boss_bar = false
 	show_cretan_boss_bar = false

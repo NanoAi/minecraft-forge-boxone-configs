@@ -8,13 +8,13 @@
 	#These settings turn auto-values on/off for the specific requirement type.  These are global settings
 	[Auto_Values.Req_Toggles]
 		"WEAR Req Values Generate" = true
-		"USE_ENCHANTMENT Req Values Generate" = true
+		"USE_ENCHANTMENT Req Values Generate" = false
 		"TOOL Req Values Generate" = true
 		"WEAPON Req Values Generate" = true
 		"USE Req Values Generate" = true
 		"PLACE Req Values Generate" = true
 		"BREAK Req Values Generate" = true
-		"KILL Req Values Generate" = true
+		"KILL Req Values Generate" = false
 		"TRAVEL Req Values Generate" = true
 		"RIDE Req Values Generate" = true
 		"TAME Req Values Generate" = true
@@ -86,22 +86,22 @@
 		[Auto_Values.Xp_Awards.Items]
 
 			[Auto_Values.Xp_Awards.Items."ANVIL_REPAIR Default Xp Award"]
-				smithing = 10
+				smithing = 20
 
 			[Auto_Values.Xp_Awards.Items."BLOCK_PLACE Default Xp Award"]
-				building = 10
+				building = 20
 
 			[Auto_Values.Xp_Awards.Items."CRAFT Default Xp Award"]
-				crafting = 10
+				crafting = 50
 
 			[Auto_Values.Xp_Awards.Items."CONSUME Default Xp Award"]
-				cooking = 10
+				cooking = 20
 
 			[Auto_Values.Xp_Awards.Items."ENCHANT Default Xp Award"]
-				magic = 10
+				magic = 20
 
 			[Auto_Values.Xp_Awards.Items."FISH Default Xp Award"]
-				fishing = 10
+				fishing = 20
 
 			[Auto_Values.Xp_Awards.Items."SMELT Default Xp Award"]
 				smithing = 100
@@ -223,6 +223,7 @@
 				"minecraft:mining_fatigue" = 1
 				"minecraft:slowness" = 1
 				"minecraft:weakness" = 1
+				"minecraft:unluck" = 1
 
 		[Auto_Values.Requirements.BLocks]
 
@@ -244,7 +245,7 @@
 	#'Toughness' Determines how much item armor toughness affects auto value calculations
 	[Auto_Values.Item_Tweaks]
 		#how much should block hardness contribute to value calculations
-		"Block Hardness Modifier" = 0.65
+		"Block Hardness Modifier" = 0.55
 
 		[Auto_Values.Item_Tweaks.SWORD_Attributes]
 			Tier = 10.0

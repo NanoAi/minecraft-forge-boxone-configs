@@ -77,7 +77,7 @@
 #Disable and configure tweaks.
 [Tweaks]
 	#Enabled tools not breaking?
-	toolBreaking = true
+	toolBreaking = false
 	#Tools and weapons that should be ineffective.
 	#Ex: ["minecraft:stone_pickaxe", "minecraft:stone_sword"]
 	uselessTools = []

@@ -18,7 +18,7 @@
 
 		[AntiCheese.AFK.DIVING]
 			tolerance_flat = 0
-			reduction = 0.1
+			reduction = 0.2
 			cooloff_amount = 1
 			tolerance_percent = 0.0
 			source = []
@@ -27,7 +27,7 @@
 
 		[AntiCheese.AFK.SUBMERGED]
 			tolerance_flat = 0
-			reduction = 0.1
+			reduction = 0.2
 			cooloff_amount = 1
 			tolerance_percent = 0.0
 			source = []
@@ -36,7 +36,7 @@
 
 		[AntiCheese.AFK.SWIM_SPRINTING]
 			tolerance_flat = 0
-			reduction = 0.1
+			reduction = 0.2
 			cooloff_amount = 1
 			tolerance_percent = 0.0
 			source = []
@@ -45,7 +45,7 @@
 
 		[AntiCheese.AFK.SURFACING]
 			tolerance_flat = 0
-			reduction = 0.1
+			reduction = 0.2
 			cooloff_amount = 1
 			tolerance_percent = 0.0
 			source = []
@@ -54,7 +54,7 @@
 
 		[AntiCheese.AFK.SWIMMING]
 			tolerance_flat = 0
-			reduction = 0.1
+			reduction = 0.2
 			cooloff_amount = 1
 			tolerance_percent = 0.0
 			source = []
@@ -82,8 +82,8 @@
 
 		[AntiCheese.Normalization.SPRINTING]
 			tolerance_flat = 10
-			reduction = 0.0
-			cooloff_amount = 0
+			reduction = 0.004
+			cooloff_amount = 1
 			tolerance_percent = 0.1
 			source = []
 			min_time_to_apply = 0
