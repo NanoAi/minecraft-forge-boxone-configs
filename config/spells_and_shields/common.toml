@@ -1,0 +1,21 @@
+#Load spell trees from configuration files in the configuration folder (true) or use the default spell trees (false).
+loadSpellTrees = false
+#Create default spell tree configuration files in the configuration folder if said folder does not exist (true) or not (false). Automatically switches back to false after creating the files.
+createDefaultSpellTrees = false
+#Add default mod spell trees to the game (true) or not (false).
+addDefaultSpellTrees = true
+#Load spell settings from existing configuration files in the configuration folder (true) or use the default settings (false).
+loadSpells = false
+#Create default spell configuration files in the configuration folder (true) or not (false). Automatically switches back to false after creating the files.
+createSpells = false
+#Players respawn with their mana bar filled (true) or empty (false).
+respawnWithFullMana = false
+#Clear a player's spell slots on death (true) or not (false). If forgetSpellsOnDeath is set to true, this always behaves as if it was also set to true.
+clearSlotsOnDeath = true
+#Make a player forget all learned spells on death (true) or not (false). Forgotten spells are still visible in spell trees but must be relearned before you can equip them.
+forgetSpellsOnDeath = true
+#Resource location of the enchanting table. Some mods could change that.
+enchantingTables = ["minecraft:enchanting_table", "quark:matrix_enchanter"]
+#Create a file containing a list of all spells with their IDs. Automatically switches back to false after creating the file.
+createSpellsList = false
+

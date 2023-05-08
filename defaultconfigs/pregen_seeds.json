@@ -1,0 +1,102 @@
+{
+	"level_seeds": [
+		{
+			"dim": "minecraft:overworld",
+			"seed": -1148899320
+		},
+		{
+			"dim": "the_bumblezone:the_bumblezone",
+			"seed": -1148899320
+		},
+		{
+			"dim": "minecraft:the_end",
+			"seed": -1148899320
+		},
+		{
+			"dim": "twilightforest:twilight_forest",
+			"seed": -1148899320
+		},
+		{
+			"dim": "dimdungeons:dungeon_dimension",
+			"seed": -1148899320
+		},
+		{
+			"dim": "blue_skies:everbright",
+			"seed": -1148899320
+		},
+		{
+			"dim": "minecraft:the_nether",
+			"seed": -1148899320
+		},
+		{
+			"dim": "undergarden:undergarden",
+			"seed": -1148899320
+		},
+		{
+			"dim": "deeperdarker:otherside",
+			"seed": -1148899320
+		},
+		{
+			"dim": "blue_skies:everdawn",
+			"seed": -1148899320
+		},
+		{
+			"dim": "dimdungeons:build_dimension",
+			"seed": -1148899320
+		},
+		{
+			"dim": "atlantis:atlantis",
+			"seed": -1148899320
+		}
+	],
+	"structure_seeds": [
+		{
+			"dim": "minecraft:overworld",
+			"seed": -1148899320
+		},
+		{
+			"dim": "the_bumblezone:the_bumblezone",
+			"seed": -1148899320
+		},
+		{
+			"dim": "minecraft:the_end",
+			"seed": -1148899320
+		},
+		{
+			"dim": "twilightforest:twilight_forest",
+			"seed": -1148899320
+		},
+		{
+			"dim": "dimdungeons:dungeon_dimension",
+			"seed": -1148899320
+		},
+		{
+			"dim": "blue_skies:everbright",
+			"seed": -1148899320
+		},
+		{
+			"dim": "minecraft:the_nether",
+			"seed": -1148899320
+		},
+		{
+			"dim": "undergarden:undergarden",
+			"seed": -1148899320
+		},
+		{
+			"dim": "deeperdarker:otherside",
+			"seed": -1148899320
+		},
+		{
+			"dim": "blue_skies:everdawn",
+			"seed": -1148899320
+		},
+		{
+			"dim": "dimdungeons:build_dimension",
+			"seed": -1148899320
+		},
+		{
+			"dim": "atlantis:atlantis",
+			"seed": -1148899320
+		}
+	]
+}
