@@ -33,7 +33,7 @@
 	#How much experience should players lose when they die?
 	#zero is no loss, one is lose everything
 	#Range: 0.0 ~ 1.0
-	"Loss on death" = 0.1
+	"Loss on death" = 0.25
 	#should loss of experience cross levels?
 	#for example, if true, a player with 1 xp above their current level would lose the
 	#[Loss on death] percentage of xp and fall below their current level.  However,
@@ -49,7 +49,7 @@
 
 	#Modifies xp gains for specific skills.  This is multiplicative to the XP.
 	[Levels."Skill Modifiers"]
-		agility = 0.8
+		agility = 0.80
 
 	#Settings for Linear XP configuration
 	[Levels."LINEAR LEVELS"]
@@ -79,7 +79,7 @@
 	"USE_ENCHANTMENT Req Enabled" = false
 	"TOOL Req Enabled" = true
 	"WEAPON Req Enabled" = true
-	"USE Req Enabled" = true
+	"USE Req Enabled" = false
 	"PLACE Req Enabled" = true
 	"BREAK Req Enabled" = true
 	"KILL Req Enabled" = false
@@ -88,7 +88,7 @@
 	"TAME Req Enabled" = true
 	"BREED Req Enabled" = true
 	"INTERACT Req Enabled" = false
-	"ENTITY_INTERACT Req Enabled" = true
+	"ENTITY_INTERACT Req Enabled" = false
 
 #All settings related to the gain of experience
 [XP_Gains]
@@ -182,7 +182,7 @@
 	"Scaling AOE" = 150
 	#what is the minimum level for scaling to kick in
 	#Range: > 0
-	"Base Level" = 0
+	"Base Level" = 12
 
 	#How should mob attributes be calculated with respect to the player's level.
 	[Mob_Scaling.Formula]
@@ -219,7 +219,7 @@
 					combat = 0.00001
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
-					combat = 1.00021
+					combat = 1.00041
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
 					combat = 0.01

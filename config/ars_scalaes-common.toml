@@ -20,19 +20,19 @@
 #Identity Abilities
 ["IDENTITY MORPHS"]
 	#cooldown for the active ability of flarecannon
-	flarecannon_cooldown = 120
+	flarecannon_cooldown = 9999
 	#cooldown for the active ability of starbuncle
-	starby_cooldown = 3600
+	starby_cooldown = 9999
 	#cooldown for the active ability of weald walker
-	ww_cooldown = 100
+	ww_cooldown = 9999
 	#cooldown for the active ability of whirlisprig
-	whirli_cooldown = 400
+	whirli_cooldown = 9999
 	#cooldown for the active ability of wilden hunter
-	wil_hunter_cooldown = 800
+	wil_hunter_cooldown = 9999
 	#cooldown for the active ability of wilden stalker
-	wil_stalker_cooldown = 1300
+	wil_stalker_cooldown = 9999
 	#cooldown for the active ability of wixie
-	wixie_cooldown = 100
+	wixie_cooldown = 9999
 
 #Hexcasting Compat
 ["HEX CASTING"]
