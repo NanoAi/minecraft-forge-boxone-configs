@@ -93,7 +93,7 @@
 	Sound = false
 	#Chance for a mob to be able to break blocks
 	#Range: 0.0 ~ 1.0
-	"Breaker Chance" = 0.0
+	"Breaker Chance" = 0.03
 	#Initial cooldown for block breaking mobs
 	#Range: > 0
 	"Breaker Initial Cooldown" = 120
@@ -112,7 +112,7 @@
 	"Break BlockEntities" = true
 	#Chance for neutral mobs to be aggressive
 	#Range: 0.0 ~ 1.0
-	"Neutral Aggressive Chance" = 0.0
+	"Neutral Aggressive Chance" = 0.1
 	#List for of pairs containing which mobs auto target others. Syntax is [mob id]-[mob id] where second value is the target.
 	# e.g. minecraft:zombie-minecraft:skeleton makes all zombies target skeletons
 	"Auto Target List" = []
@@ -127,7 +127,7 @@
 	"Guardian Chance" = 1.0
 	#Chance for mobs to be able to summon a flying mount
 	#Range: 0.0 ~ 1.0
-	"Phantom Chance" = 0.5
+	"Phantom Chance" = 0.01
 
 #Configs regarding mobs spawning with equipment
 [equipment]

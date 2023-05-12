@@ -182,7 +182,7 @@
 	"Scaling AOE" = 150
 	#what is the minimum level for scaling to kick in
 	#Range: > 0
-	"Base Level" = 12
+	"Base Level" = 0
 
 	#How should mob attributes be calculated with respect to the player's level.
 	[Mob_Scaling.Formula]
