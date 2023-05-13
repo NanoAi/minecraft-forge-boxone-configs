@@ -208,7 +208,7 @@
 
 			#Tool requirments specifically for swords.)
 			[Auto_Values.Requirements.Items."Sword TOOL Override"]
-				farming = 1
+				combat = 1
 
 			#Tool requirments specifically for axes.)
 			[Auto_Values.Requirements.Items."Axe TOOL Override"]
@@ -220,10 +220,10 @@
 
 			#What effects and levels should be applied if a player does not meet an item req
 			[Auto_Values.Requirements.Items."Item Penalties"]
-				"minecraft:mining_fatigue" = 1
-				"minecraft:slowness" = 1
-				"minecraft:weakness" = 1
-				"minecraft:unluck" = 1
+				"unusualend:building_inability" = 1
+				"minecraft:mining_fatigue" = 2
+				"minecraft:weakness" = 2
+				"minecraft:unluck" = 4
 
 		[Auto_Values.Requirements.BLocks]
 

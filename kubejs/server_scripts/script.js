@@ -20,21 +20,29 @@ ServerEvents.tags('item', event => {
         .add('delightful:prickly_pear_juice')
 })
 
-global.LivingEntityUseItemEvent = (event) => {
-    const {item, entity} = event;
-    if ( item.hasTag("toughasnails:drinks") ) {
-        entity.potionEffects.add("toughasnails:climate_clemency", 0, 0, true, false);
-        switch ( item.getId() ) {
-            case "botania:brew_flask":
-                entity.potionEffects.add("toughasnails:climate_clemency", 3600, 2, false, false);
-                break;
-            case "delightful:prickly_pear_juice":
-            case "farmersdelight:melon_juice":
-            case "ars_nouveau:potion_flask":
-                entity.potionEffects.add("toughasnails:climate_clemency", 600, 1, false, false);
-                break;
-            default:
-                break;
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
+let noRecursing = false;
+EntityEvents.hurt(event => {
+    if ( noRecursing ) return;
+    noRecursing = true;
+
+    const {entity, player, source} = event;
+    const im = source.getImmediate();
+    const rand = ( getRandomInt(1, 11) == 1 );
+
+    if ( rand && im != null && player != null && entity != null ) {
+        if ( entity.isPlayer() && im.type.includes('spider') )  {
+            if ( !player.potionEffects.isActive('minecraft:slowness') ) {
+                player.potionEffects.add('minecraft:slowness', 120, 3);
+                player.potionEffects.add('ars_nouveau:snared', 40, 0);
+            }
         }
     }
-}
+
+    noRecursing = false;
+});
