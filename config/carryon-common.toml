@@ -15,16 +15,16 @@
 	blockSlownessMultiplier = 1.0
 	#Slowness multiplier for entities
 	#Range: 0.0 ~ 1.7976931348623157E308
-	entitySlownessMultiplier = 1.0
+	entitySlownessMultiplier = 0.1
 	#Maximum stack limit for entities
 	#Range: > 1
-	maxEntityStackLimit = 10
+	maxEntityStackLimit = 3
 	#More complex Tile Entities slow down the player more
 	heavyTiles = true
 	#Allow all blocks to be picked up, not just Tile Entites. White/Blacklist will still be respected.
 	pickupAllBlocks = false
 	#Whether Blocks and Entities slow the creative player down when carried
-	slownessInCreative = true
+	slownessInCreative = false
 	#Whether hostile mobs should be able to picked up in survival mode
 	pickupHostileMobs = false
 	#Larger Entities slow down the player more
@@ -32,15 +32,15 @@
 	#Allow babies to be carried even when adult mob is blacklisted (or not whitelisted)
 	allowBabies = false
 	#Use Whitelist instead of Blacklist for Blocks
-	useWhitelistBlocks = false
+	useWhitelistBlocks = true
 	#Use Whitelist instead of Blacklist for Entities
-	useWhitelistEntities = false
+	useWhitelistEntities = true
 	#Use Whitelist instead of Blacklist for Stacking
-	useWhitelistStacking = false
+	useWhitelistStacking = true
 	#Whether the player can hit blocks and entities while carrying or not
 	hitWhileCarrying = false
 	#Whether the player drops the carried object when hit or not
-	dropCarriedWhenHit = false
+	dropCarriedWhenHit = true
 	#Use custom Pickup Scripts. Having this set to false, will not allow you to run scripts, but will increase your performance
 	useScripts = false
 	#Allows entities to be stacked on top of each other
@@ -55,11 +55,43 @@
 [whitelist]
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
-	allowedEntities = []
+	allowedEntities = [
+		"sophisticatedstorage:chest",
+		"sophisticatedstorage:*_chest",
+		"cloudstorage:cloud_chest",
+		"cloudstorage:balloon",
+		"enderstorage:ender_tank",
+		"enderstorage:*_chest",
+		"alexsmobs:blobfish",
+		"alexsmobs:raccoon",
+		"minecraft:cat",
+		"twilightforest:penguin",
+		"alexsmobs:lobster",
+		"weirdmobs:bucketed_axolotl",
+		"sophisticatedbackpacks:backpack",
+		"sophisticatedbackpacks:*_backpack",
+		"#forge:shulker_boxes"
+	]
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
-	allowedBlocks = []
+	allowedBlocks = [
+		"#forge:cobblestone",
+		"#minecraft:planks",
+		"#forge:storage_blocks",
+		"#forge:bookshelves",
+		"#forge:wool",
+		"#forge:shulker_boxes"
+	]
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
-	allowedStacking = []
+	allowedStacking = [
+		"#forge:bookshelves",
+		"#forge:storage_blocks",
+		"sophisticatedstorage:chest",
+		"sophisticatedstorage:*_chest",
+		"cloudstorage:cloud_chest",
+		"enderstorage:ender_tank",
+		"enderstorage:*_chest",
+		"#forge:shulker_boxes"
+	]
 
 [blacklist]
 	#Blacklist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
