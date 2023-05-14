@@ -33,7 +33,7 @@ EntityEvents.hurt(event => {
 
     const {entity, player, source} = event;
     const im = source.getImmediate();
-    const rand = ( getRandomInt(1, 11) == 1 );
+    const rand = ( getRandomInt(1, 8) == 1 );
 
     if ( rand && im != null && player != null && entity != null ) {
         if ( entity.isPlayer() && im.type.includes('spider') )  {
