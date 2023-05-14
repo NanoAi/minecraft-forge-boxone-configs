@@ -22,7 +22,7 @@
 	#More complex Tile Entities slow down the player more
 	heavyTiles = true
 	#Allow all blocks to be picked up, not just Tile Entites. White/Blacklist will still be respected.
-	pickupAllBlocks = false
+	pickupAllBlocks = true
 	#Whether Blocks and Entities slow the creative player down when carried
 	slownessInCreative = false
 	#Whether hostile mobs should be able to picked up in survival mode
@@ -56,24 +56,32 @@
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
 	allowedEntities = [
-		"sophisticatedstorage:chest",
-		"sophisticatedstorage:*_chest",
-		"cloudstorage:cloud_chest",
 		"cloudstorage:balloon",
-		"enderstorage:ender_tank",
-		"enderstorage:*_chest",
 		"alexsmobs:blobfish",
 		"alexsmobs:raccoon",
 		"minecraft:cat",
-		"twilightforest:penguin",
+		"minecraft:pig",
+		"minecraft:bee",
+		"minecraft:allay",
+		"alexsmobs:potoo",
+		"minecraft:axolotl",
 		"alexsmobs:lobster",
-		"weirdmobs:bucketed_axolotl",
-		"sophisticatedbackpacks:backpack",
-		"sophisticatedbackpacks:*_backpack",
-		"#forge:shulker_boxes"
+		"alexsmobs:platypus",
+		"twilightforest:penguin",
+		"betteranimalsplus:badger",
+		"weirdmobs:bucketed_axolotl"
 	]
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
 	allowedBlocks = [
+		"minecraft:chest",
+		"minecraft:lantern",
+		"liroth:*_chest",
+		"sophisticatedstorage:chest",
+		"sophisticatedstorage:*_chest",
+		"cloudstorage:cloud_chest",
+		"enderstorage:ender_tank",
+		"enderstorage:*_chest",
+		"#forge:shulker_boxes",
 		"#forge:cobblestone",
 		"#minecraft:planks",
 		"#forge:storage_blocks",
@@ -83,13 +91,20 @@
 	]
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
 	allowedStacking = [
-		"#forge:bookshelves",
-		"#forge:storage_blocks",
+		"minecraft:chest",
+		"minecraft:lantern",
+		"liroth:*_chest",
 		"sophisticatedstorage:chest",
 		"sophisticatedstorage:*_chest",
 		"cloudstorage:cloud_chest",
 		"enderstorage:ender_tank",
 		"enderstorage:*_chest",
+		"#forge:shulker_boxes",
+		"#forge:cobblestone",
+		"#minecraft:planks",
+		"#forge:storage_blocks",
+		"#forge:bookshelves",
+		"#forge:wool",
 		"#forge:shulker_boxes"
 	]
 
@@ -108,4 +123,3 @@
 	customPickupConditionsBlocks = []
 	#Custom Pickup Conditions for Entities
 	customPickupConditionsEntities = []
-
