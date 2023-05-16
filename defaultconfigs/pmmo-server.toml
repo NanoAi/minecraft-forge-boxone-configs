@@ -117,12 +117,12 @@
 
 			[XP_Gains.Event_XP_Specifics.Damage_Received."RECEIVE_DAMAGE Skills and Ratios"]
 				endurance = 2.0
-				combat = 1.0
+				combat = 0.5
 
 		[XP_Gains.Event_XP_Specifics.Damage_Dealt]
 
 			[XP_Gains.Event_XP_Specifics.Damage_Dealt."DEAL_MELEE_DAMAGE Skills and Ratios"]
-				combat = 5.0
+				combat = 1.5
 
 			[XP_Gains.Event_XP_Specifics.Damage_Dealt."DEAL_RANGED_DAMAGE SKills and Ratios"]
 				archery = 2.0
