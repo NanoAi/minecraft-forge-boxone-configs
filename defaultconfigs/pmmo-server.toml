@@ -117,14 +117,16 @@
 
 			[XP_Gains.Event_XP_Specifics.Damage_Received."RECEIVE_DAMAGE Skills and Ratios"]
 				endurance = 2.0
+				combat = 1.0
 
 		[XP_Gains.Event_XP_Specifics.Damage_Dealt]
 
 			[XP_Gains.Event_XP_Specifics.Damage_Dealt."DEAL_MELEE_DAMAGE Skills and Ratios"]
-				combat = 2.0
+				combat = 5.0
 
 			[XP_Gains.Event_XP_Specifics.Damage_Dealt."DEAL_RANGED_DAMAGE SKills and Ratios"]
 				archery = 2.0
+				combat = 0.5
 
 		[XP_Gains.Event_XP_Specifics.Jumps]
 
@@ -182,7 +184,7 @@
 	"Scaling AOE" = 150
 	#what is the minimum level for scaling to kick in
 	#Range: > 0
-	"Base Level" = 0
+	"Base Level" = 3
 
 	#How should mob attributes be calculated with respect to the player's level.
 	[Mob_Scaling.Formula]
@@ -216,7 +218,7 @@
 			[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic"]
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".movement_speed]
-					combat = 0.00001
+					combat = 0.0
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
 					combat = 1.00041

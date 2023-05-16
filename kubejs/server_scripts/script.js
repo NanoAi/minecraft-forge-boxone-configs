@@ -48,9 +48,9 @@ EntityEvents.hurt(event => {
 });
 
 ServerEvents.recipes( event => {
-    event.shapeless('pmmo_xp_bottles:wood_cutting_bottle', [Item.of('minecraft:iron_axe').ignoreNBT(), '8x create_sa:heap_of_experience']);
-    event.shapeless('pmmo_xp_bottles:miningbottle', [Item.of('minecraft:iron_pickaxe').ignoreNBT(), '8x create_sa:heap_of_experience']);
-    event.shapeless('pmmo_xp_bottles:endurancebottle', [Item.of('minecraft:diamond_chestplate').ignoreNBT(), '8x create_sa:heap_of_experience']);
-    event.shapeless('pmmo_xp_bottles:agilitybottle', ['#forge:ingots/silver', '8x create_sa:heap_of_experience']);
-    event.shapeless('pmmo_xp_bottles:combatbottle', [Item.of('minecraft:netherite_axe').ignoreNBT(), '8x create_sa:heap_of_experience']);
+    event.shapeless('pmmo_xp_bottles:wood_cutting_bottle', [Item.of('minecraft:golden_axe').ignoreNBT(), '3x create_sa:heap_of_experience']);
+    event.shapeless('pmmo_xp_bottles:miningbottle', [Item.of('minecraft:golden_pickaxe').ignoreNBT(), '3x create_sa:heap_of_experience']);
+    event.shapeless('pmmo_xp_bottles:endurancebottle', [Item.of('minecraft:golden_chestplate').ignoreNBT(), '3x create_sa:heap_of_experience']);
+    event.shapeless('pmmo_xp_bottles:agilitybottle', [Item.of('minecraft:golden_boots').ignoreNBT(), '3x create_sa:heap_of_experience']);
+    event.shapeless('pmmo_xp_bottles:combatbottle', [Item.of('minecraft:golden_sword').ignoreNBT(), '3x create_sa:heap_of_experience']);
 });
