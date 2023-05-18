@@ -53,4 +53,6 @@ ServerEvents.recipes( event => {
     event.shapeless('pmmo_xp_bottles:endurancebottle', [Item.of('minecraft:golden_chestplate').ignoreNBT(), '3x create_sa:heap_of_experience']);
     event.shapeless('pmmo_xp_bottles:agilitybottle', [Item.of('minecraft:golden_boots').ignoreNBT(), '3x create_sa:heap_of_experience']);
     event.shapeless('pmmo_xp_bottles:combatbottle', [Item.of('minecraft:golden_sword').ignoreNBT(), '3x create_sa:heap_of_experience']);
+    
+    event.shapeless('theabyss:loran', ['phantasm:crystal_spike_tip', 'minecraft:obsidian']);
 });
