@@ -16,9 +16,9 @@
 	#If your formula makes the required xp to get max level greater than
 	#pmmo can store, pmmo will replace your value with the actual max.
 	#Range: > 1
-	"Max Level" = 250
+	"Max Level" = 1000
 	#shold levels be determined using an exponential forumula?
-	"Use Exponential Formula" = false
+	"Use Exponential Formula" = true
 	#=====LEAVE -1 VALUE UNLESS YOU WANT STATIC LEVELS=====
 	#Replacing the -1 and adding values to this list will set the xp required to advance for each
 	#level manually.  Note that the number of level settings you enter into this list
@@ -29,22 +29,7 @@
 	#As a technical note, if you enter values that are not greater than their previous
 	#value, the entire list will be ignored and revert back to the selected exponential
 	#or linear formulaic calculation
-	Static_Levels = [
-		50,100,150,200,250,300,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,
-		1250,1300,1350,1400,1450,1500,1550,1600,1650,1700,1750,1800,1850,1900,1950,2000,2050,2100,2150,2200,
-		2250,2300,2350,2400,2450,2500,2600,2700,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800,3900,
-		4000,4100,4200,4300,4400,4500,4600,4700,4800,4900,5000,5100,5200,5300,5400,5500,5600,5700,5800,5900,
-		6000,6100,6200,6300,6400,6500,6600,6700,6800,6900,7000,7100,7200,7300,7400,7500,7650,7800,7950,8100,
-		8250,8400,8550,8700,8850,9000,9150,9300,9450,9600,9750,9900,10050,10200,10350,10500,10650,10800,10950,
-		11100,11250,11400,11550,11700,11850,12000,12150,12300,12450,12600,12750,12900,13050,13200,13350,13500,
-		13650,13800,13950,14100,14250,14400,14550,14700,14850,15000,15150,15300,15450,15600,15750,15900,16050,
-		16200,16350,16500,16650,16800,16950,17100,17250,17400,17550,17700,17850,18000,18150,18300,18450,18600,
-		18750,18900,19050,19200,19350,19500,19650,19800,19950,20100,20250,20400,20550,20700,20850,21000,21150,
-		21300,21450,21600,21750,21900,22050,22200,22350,22500,22650,22800,22950,23100,23250,23400,23550,23700,
-		23850,24000,24150,24300,24450,24600,24750,24900,25050,25200,25350,25500,25650,25800,25950,26100,26250,
-		26400,26550,26700,26850,27000,27150,27300,27450,27600,27750,27900,28050,28200,28350,28500,28650,28800,
-		28950,29100,29250,29400,29550,29700,29850,30000
-	]
+	Static_Levels = [-1]
 	#How much experience should players lose when they die?
 	#zero is no loss, one is lose everything
 	#Range: 0.0 ~ 1.0
@@ -70,23 +55,23 @@
 	[Levels."LINEAR LEVELS"]
 		#what is the base xp to reach level 2 (this + level * xpPerLevel)
 		#Range: 0 ~ 9223372036854775807
-		"Base XP" = 500
+		"Base XP" = 250
 		#What is the xp increase per level (baseXp + level * this)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Per Level" = 40.0
+		"Per Level" = 200.0
 
 	#Settings for Exponential XP configuration
 	[Levels."EXPONENTIAL LEVELS"]
 		# Original Value Was: 250 * (1.104088505342588 ^ (1.1 * level))
 		#What is the x in: x * ([Power Base]^([Per Level] * level))
 		#Range: > 1
-		"Base XP" = 500
+		"Base XP" = 250
 		#What is the x in: [Base XP] * (x^([Per Level] * level))
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Power Base" = 1.042
 		#What is the x in: [Base XP] * ([Power Base]^(x * level))
 		#Range: 0.0 ~ 1.7976931348623157E308
-		"Per Level" = 0.72
+		"Per Level" = 1.42
 
 #Should requirements apply for the applicable action type
 [Requirements]
@@ -233,13 +218,13 @@
 			[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic"]
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".movement_speed]
-					combat = 1.0
+					combat = 0.0
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
-					combat = 1.01
+					combat = 1.00041
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
-					combat = 0.02
+					combat = 0.01
 
 #Settings related to the Vein Miner
 [Vein_Miner]
