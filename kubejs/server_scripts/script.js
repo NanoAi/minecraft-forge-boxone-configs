@@ -12,7 +12,7 @@ ServerEvents.tags('item', event => {
 
     // Get the #forge:cobblestone tag collection and remove Mossy Cobblestone from it
     // event.get('forge:cobblestone').remove('minecraft:mossy_cobblestone')
-
+    event.get('productivebees:flowers/quarry').add('greekfantasy:limestone');
 })
 
 function getRandomInt(min, max) {
@@ -48,6 +48,8 @@ ServerEvents.recipes( event => {
     event.shapeless('pmmo_xp_bottles:endurancebottle', [Item.of('minecraft:golden_chestplate').ignoreNBT(), '3x create_sa:heap_of_experience']);
     event.shapeless('pmmo_xp_bottles:agilitybottle', [Item.of('minecraft:golden_boots').ignoreNBT(), '3x create_sa:heap_of_experience']);
     event.shapeless('pmmo_xp_bottles:combatbottle', [Item.of('minecraft:golden_sword').ignoreNBT(), '3x create_sa:heap_of_experience']);
-    
+
+    event.shapeless('create:limestone', 'greekfantasy:limestone');
+    event.shapeless('greekfantasy:limestone', 'create:limestone');
     event.shapeless('theabyss:loran', ['phantasm:crystal_spike_tip', 'minecraft:obsidian']);
 });
