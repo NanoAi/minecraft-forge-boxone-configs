@@ -8,8 +8,6 @@ do
     LOCAL=$(git rev-parse HEAD)
 
     if [[ $REMOTE != $LOCAL ]]; then
-        git fetch origin
-        git reset --hard origin/main
         git pull
     fi
 
