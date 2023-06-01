@@ -3,6 +3,9 @@
 
 # track this file
 !.gitignore
+!update_tracker.sh
+!README.md
+!index.html
 
 # whitelist everything in ./config/
 !config/**
