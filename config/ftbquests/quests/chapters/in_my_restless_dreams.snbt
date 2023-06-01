@@ -1,0 +1,788 @@
+{
+	id: "39D46085EA819C8F"
+	group: ""
+	order_index: 1
+	filename: "in_my_restless_dreams"
+	title: "Main Quest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Talk to a wonderer"
+			x: -4.0d
+			y: 2.0d
+			subtitle: "Make sure you have a bind for FTB Quests!"
+			dependencies: ["2F0580403D28723E"]
+			invisible: true
+			id: "334BF58BD89B214E"
+			tasks: [{
+				id: "0584B90C3D5D564C"
+				type: "observation"
+				title: "Talk to a wanderer."
+				timer: 45L
+				observe_type: 5
+				to_observe: "minecraft:wandering_trader"
+			}]
+			rewards: [
+				{
+					id: "6ED8517E95990EBE"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: [
+								"{\"text\":\"There's something wrong with this world traveller, you can feel it too right? Small things, just aren't quite right...\\n\\nListen, somewhere in this world there's a portal you will need 12 eyes to ent-\\n\\nI can't be seen talking to you...\"}"
+								"{\"text\":\"Find me again when you're a little more prepared and I'll tell you more.\"}"
+							]
+							title: "hmm..."
+							author: "A Wanderer"
+							display: {
+								Name: "{\"text\":\"A wanderers call\"}"
+							}
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "3984592F2278D1E4"
+					type: "toast"
+					title: "Open your FTB Quests menu!"
+					team_reward: false
+					auto: "enabled"
+					description: ""
+				}
+			]
+		}
+		{
+			title: "Gearing up..."
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["334BF58BD89B214E"]
+			hide: true
+			id: "5EBD31BF7A8C20BC"
+			tasks: [
+				{
+					id: "296CDFA19649D991"
+					type: "stat"
+					icon: {
+						id: "minecraft:chest"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					disable_toast: true
+					stat: "lootr:looted_stat"
+					value: 5
+				}
+				{
+					id: "353E6EC1F5379978"
+					type: "stat"
+					icon: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					disable_toast: true
+					stat: "minecraft:walk_one_cm"
+					value: 50000
+				}
+				{
+					id: "51B390CF9BA8B8CE"
+					type: "pmmo:skill"
+					disable_toast: true
+					skill: "combat"
+					requiredLevel: 30
+				}
+				{
+					id: "3503AC5811EE4380"
+					type: "stat"
+					icon: {
+						id: "waystones:waystone"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					disable_toast: true
+					stat: "waystones:waystone_activated"
+					value: 3
+				}
+				{
+					id: "41373A4E88F9C0A3"
+					type: "stat"
+					icon: {
+						id: "bhc:red_heart"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					disable_toast: true
+					stat: "minecraft:damage_taken"
+					value: 500
+				}
+				{
+					id: "337F9F3058DB5B41"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 3L
+					consume_items: true
+					only_from_crafting: false
+					match_nbt: false
+				}
+			]
+			rewards: [
+				{
+					id: "668480E483F8DC33"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "0E7D4952450C7532"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:backpack"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "5180B200814BFAEF"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "mining"
+					amount: 5
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["5EBD31BF7A8C20BC"]
+			id: "7D4B81D0F0FCB370"
+			tasks: [{
+				id: "21FDE10EA0BA305E"
+				type: "xp"
+				value: 15L
+				points: false
+			}]
+			rewards: [
+				{
+					id: "0CA87C587D4AABA7"
+					type: "item"
+					auto: "enabled"
+					item: {
+						id: "paraglider:paraglider"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "70C0B61659A58A2F"
+					type: "command"
+					title: "Check your Quest Book!"
+					team_reward: true
+					auto: "enabled"
+					command: "/execute at \"@p\" run summon minecraft:wandering_trader ~ ~ ~ summon minecraft:wandering_trader ~ ~ ~ {Silent:1b}"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Defeat The Nether!"
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["3DE164E8640EC048"]
+			id: "5EC974216BFD756C"
+			tasks: [
+				{
+					id: "6446771E536CE4D4"
+					type: "stat"
+					stat: "lootr:looted_stat"
+					value: 100
+				}
+				{
+					id: "1570E8ADBF24B5AF"
+					type: "kill"
+					icon: {
+						id: "graveyard:lying_wither_skeleton"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "minecraft:wither_skeleton"
+					value: 3L
+				}
+				{
+					id: "2CBE20240E8E0CD9"
+					type: "kill"
+					icon: {
+						id: "blue_skies:soul_fragment"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "alexsmobs:soul_vulture"
+					value: 1L
+				}
+				{
+					id: "479EB713F5FA43E8"
+					type: "kill"
+					icon: {
+						id: "dungeons_mobs:netherplate_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [{
+									data: [ ]
+									source: "dungeons_libraries:gear_config"
+								}]
+							}
+						}
+					}
+					entity: "undead_unleashed:flamebreather"
+					value: 1L
+				}
+				{
+					id: "13931BF615A19ACD"
+					type: "kill"
+					icon: {
+						id: "minecraft:ghast_tear"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "minecraft:ghast"
+					value: 1L
+				}
+				{
+					id: "7D48953851A1764E"
+					type: "kill"
+					icon: {
+						id: "twilightforest:knightmetal_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "bygonenether:wither_skeleton_knight"
+					value: 1L
+				}
+				{
+					id: "0A3CC07202A1ECA8"
+					type: "structure"
+					title: "Find a Sanctum!"
+					icon: {
+						id: "quark:netherrack_bricks"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					structure: "incendium:sanctum"
+				}
+				{
+					id: "42DC9F1E59B7BDEA"
+					type: "kill"
+					icon: {
+						id: "bygonenether:withered_debris"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "bygonenether:wraither"
+					value: 3L
+				}
+				{
+					id: "3CAE3942015EB2FF"
+					type: "structure"
+					title: "Find a Nether Reactor"
+					icon: {
+						id: "minecraft:netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					structure: "incendium:nether_reactor"
+				}
+			]
+			rewards: [
+				{
+					id: "41A7481961BA8199"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "upgrade_aquatic:vibing_strong"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "5E8D01C3F0755596"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "51C3AC93E287F263"
+					type: "item"
+					item: {
+						id: "minecraft:ender_eye"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 3
+				}
+				{
+					id: "02381A6A206CFE4C"
+					type: "item"
+					item: {
+						id: "minecraft:ancient_debris"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "4BFAB3AA5736E7F0"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:diamond_sight"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "In my restless dreams..."
+			x: -5.5d
+			y: 2.0d
+			id: "2F0580403D28723E"
+			tasks: [{
+				id: "4081F3E1CEAC56D8"
+				type: "questsadditions:interaction"
+				secret: true
+				entity: "minecraft:wandering_trader"
+				nbt: { }
+				value: 1L
+				checkItem: false
+			}]
+			rewards: [{
+				id: "48A14F02EF4B5D9C"
+				type: "item"
+				auto: "invisible"
+				item: {
+					id: "ftbquests:book"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				only_one: true
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			dependencies: ["7D4B81D0F0FCB370"]
+			id: "0A1B880B90CFBB9E"
+			tasks: [
+				{
+					id: "6F0CB76F612B4138"
+					type: "questsadditions:interaction"
+					title: "Find a Goblin Trader."
+					icon: {
+						id: "minecraft:grass_block"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "goblintraders:goblin_trader"
+					nbt: { }
+					value: 1L
+					checkItem: false
+				}
+				{
+					id: "332F82BE400F1C2B"
+					type: "stat"
+					title: "Traded with Goblins part 1"
+					icon: "minecraft:emerald"
+					stat: "goblintraders:trade_with_goblin"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "610F6427598BC9EB"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "endurance"
+					amount: 3
+				}
+				{
+					id: "18C47D14521029CB"
+					type: "custom"
+					title: "Check your Quest Book!"
+					auto: "enabled"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			dependencies: ["0A1B880B90CFBB9E"]
+			id: "3DE164E8640EC048"
+			tasks: [
+				{
+					id: "046E1BCF0C5571EA"
+					type: "questsadditions:interaction"
+					title: "Interact with a Vein Goblin."
+					icon: {
+						id: "minecraft:netherrack"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					entity: "goblintraders:vein_goblin_trader"
+					nbt: { }
+					value: 1L
+					checkItem: false
+				}
+				{
+					id: "4FAAC7A388D3D92B"
+					type: "stat"
+					title: "Traded with Goblins part 2"
+					icon: {
+						id: "minecraft:emerald"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					stat: "goblintraders:trade_with_goblin"
+					value: 2
+				}
+				{
+					id: "155C6C6FC247504A"
+					type: "dimension"
+					title: "Enter the Nether!"
+					dimension: "minecraft:the_nether"
+				}
+			]
+			rewards: [
+				{
+					id: "0DB22B1A7A7F7E3F"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "23702C3EF0076898"
+					type: "item"
+					item: {
+						id: "minecraft:splash_potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			title: "A Goblins Knowledge"
+			icon: {
+				id: "minecraft:book"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			disable_toast: true
+			x: 0.5d
+			y: 1.0d
+			subtitle: "The Red Place"
+			description: [
+				"Hey there! You look like you've been places."
+				""
+				"Did my friend the Wanderer send you?"
+				"Wait, wait, wait, don't tell me I'll just guess that the answer is yes."
+				""
+				"I heard that a &5purple&f portal can get you to some sort of &4red&f place!"
+				""
+				"Find my less green brother there, and he'll tell you what you want to know."
+				""
+				"But keep it on the downlow, we don't want &lthem&r to hear us."
+			]
+			dependencies: ["0A1B880B90CFBB9E"]
+			optional: true
+			invisible: true
+			hide_details_until_startable: true
+			id: "0CBCF6AE229FDC69"
+			tasks: [{
+				id: "6DAE03986584CFCE"
+				type: "stat"
+				title: "Lore Unlocked!"
+				icon: {
+					id: "minecraft:book"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			title: "A Nervous Discovery"
+			icon: {
+				id: "minecraft:book"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			disable_toast: true
+			x: -1.0d
+			y: 1.0d
+			subtitle: "A Goblin, in A Cave?"
+			description: [
+				"Hmm! You certainly are much stronger then when I first met you!"
+				""
+				"I'm learning more and more about these strange happenings every day,"
+				"but I think they might be on to us."
+				""
+				"Hmmm, there's a little goblin guy you can find in a cave."
+				""
+				"Find him, and he will tell you what you should do next."
+				""
+				""
+				"I'll have to keep quiet for now, but I hope I'll be able to see you at least once more, adventurer."
+			]
+			dependencies: ["7D4B81D0F0FCB370"]
+			optional: true
+			invisible: true
+			hide_details_until_startable: true
+			id: "443ACFE3DBE27173"
+			tasks: [{
+				id: "78A16840530F32E2"
+				type: "stat"
+				title: "Lore Unlocked!"
+				icon: {
+					id: "minecraft:book"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				secret: true
+				stat: "minecraft:play_time"
+				value: 1
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["3DE164E8640EC048"]
+			optional: true
+			id: "1C9830932C74E752"
+			tasks: [{
+				id: "2DD9750D9BAAD830"
+				type: "questsadditions:interaction"
+				title: "Gather info from Piglin Prisoners."
+				entity: "bygonenether:piglin_prisoner"
+				nbt: { }
+				value: 3L
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "43B49BDFF00C1763"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:gold_sight"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "3A799F252CF35AD3"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "potionsmaster:quartz_sight"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			dependencies: ["3DE164E8640EC048"]
+			optional: true
+			id: "109D602997BF674A"
+			tasks: [{
+				id: "297D58197FD0EB42"
+				type: "kill"
+				entity: "alexsmobs:soul_vulture"
+				value: 5L
+			}]
+			rewards: [{
+				id: "3BAE2DB0CAC06A2E"
+				type: "command"
+				command: "/heal @p"
+				player_command: false
+			}]
+		}
+		{
+			title: "Fishing in Lava?"
+			x: 4.5d
+			y: 3.5d
+			dependencies: ["3DE164E8640EC048"]
+			optional: true
+			id: "5B9514BA9191CEA6"
+			tasks: [{
+				id: "2DB48F0D74D8D35C"
+				type: "item"
+				item: {
+					id: "netherdepthsupgrade:lava_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5F0D473E057466A6"
+					type: "item"
+					item: {
+						id: "netherdepthsupgrade:lava_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "25BE7CFA427684E2"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "2FF6749A23102783"
+					type: "item"
+					item: {
+						id: "evilcraft:blood_extractor"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "minecraft:empty"
+								Amount: 0
+							}
+							capacity: 5000
+						}
+						ForgeCaps: {
+							Parent: {
+								FluidName: "minecraft:empty"
+								Amount: 0
+								capacity: 5000
+							}
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

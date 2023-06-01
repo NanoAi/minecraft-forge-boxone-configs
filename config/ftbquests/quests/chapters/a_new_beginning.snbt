@@ -1,0 +1,1194 @@
+{
+	id: "486DD36310E5C09C"
+	group: ""
+	order_index: 0
+	filename: "a_new_beginning"
+	title: "Achievments"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.0d
+			y: -5.0d
+			id: "3B2FA94E0BD45307"
+			tasks: [{
+				id: "1BB6BA7D30A24666"
+				type: "pmmo:skill"
+				title: "Just Getting Started"
+				icon: {
+					id: "create:experience_nugget"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				skill: "combat"
+				requiredLevel: 30
+			}]
+			rewards: [
+				{
+					id: "08DC32EB7D0FCC4F"
+					type: "pmmo:levelreward"
+					title: "Durable!"
+					auto: "invisible"
+					skill: "endurance"
+					amount: 5
+				}
+				{
+					id: "38DFD4F5347377AC"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "46FB84232F5AA464"
+					type: "command"
+					team_reward: false
+					auto: "invisible"
+					exclude_from_claim_all: true
+					command: "/heal @p"
+					player_command: false
+				}
+				{
+					id: "27CB51E7189D9968"
+					type: "item"
+					team_reward: false
+					auto: "enabled"
+					item: {
+						id: "ftbquests:book"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The 1000th Mob"
+			x: -7.0d
+			y: -6.0d
+			subtitle: "Kill 1000 mobs!"
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "1EDD32C705BDF9C2"
+			tasks: [{
+				id: "37A2340AC8DEDF79"
+				type: "stat"
+				title: "The 1000th Mob Kill!"
+				icon: {
+					id: "minecraft:bookshelf"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				stat: "minecraft:mob_kills"
+				value: 1000
+			}]
+			rewards: [
+				{
+					id: "37BBBE6D83369375"
+					type: "item"
+					item: {
+						id: "kacys_cosmetics:iron_axe_helmet"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\":\"Heading my way?\"}"
+							}
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "0DE4E19291834B0A"
+					type: "item"
+					item: {
+						id: "kacys_cosmetics:blobfish_helmet"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\":\"Nothing more menacing...\"}"
+							}
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "57738834F448666F"
+					type: "item"
+					item: {
+						id: "quark:ancient_tome"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 9s
+								id: "minecraft:sharpness"
+							}]
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:badlands_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -8.5d
+			y: -2.0d
+			id: "65CBFECB17757793"
+			tasks: [{
+				id: "438735D2475A64A6"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:badlands_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:bamboo_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -7.5d
+			y: -2.0d
+			id: "7C4CFE3C37EE3BFD"
+			tasks: [{
+				id: "08ED4B8FBF43D72F"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:bamboo_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:beach_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -6.5d
+			y: -2.0d
+			id: "347FB88683A032A6"
+			tasks: [{
+				id: "3746CABAF5E2718B"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:beach_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:cave_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -8.5d
+			y: -1.0d
+			id: "4E6BCD7791807C76"
+			tasks: [{
+				id: "7C2985D2F8594964"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:cave_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:dark_oak_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -7.5d
+			y: -1.0d
+			id: "19EB21A474DCACED"
+			tasks: [{
+				id: "4959E41BF4CB9617"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:dark_oak_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:desert_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -6.5d
+			y: -1.0d
+			id: "4D1FCBE3AB6F3912"
+			tasks: [{
+				id: "61CD82C830F6FBEA"
+				type: "kill"
+				entity: "creeperoverhaul:desert_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:dripstone_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -5.5d
+			y: -2.0d
+			id: "1C6A751F31BA8179"
+			tasks: [{
+				id: "3285ABF3E1F6B49D"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:dripstone_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:hills_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -5.5d
+			y: -1.0d
+			id: "7D43D0109D7943BA"
+			tasks: [{
+				id: "7E280D9C396BC6FC"
+				type: "kill"
+				entity: "creeperoverhaul:hills_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "born_in_chaos_v1:phantom_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -4.5d
+			y: -2.0d
+			id: "520FC4FD470D9A2C"
+			tasks: [{
+				id: "6B15E3C1696F141D"
+				type: "kill"
+				disable_toast: true
+				entity: "born_in_chaos_v1:phantom_creeper_copy"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:jungle_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -4.5d
+			y: -1.0d
+			id: "5D79EAF3DBA77802"
+			tasks: [{
+				id: "612663F0A976E27A"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:jungle_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:mushroom_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -3.5d
+			y: -2.0d
+			id: "12871D08D8558848"
+			tasks: [{
+				id: "4FA2A6DCE5DF33A5"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:mushroom_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:ocean_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -3.5d
+			y: -1.0d
+			id: "4350594C0354AF60"
+			tasks: [{
+				id: "47928870982125EF"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:ocean_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:savannah_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -2.5d
+			y: -2.0d
+			id: "0E0F381EB3ED8983"
+			tasks: [{
+				id: "4172D714AFAFE14C"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:savannah_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:snowy_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -2.5d
+			y: -1.0d
+			id: "2E5B42AEEF728DDF"
+			tasks: [{
+				id: "10299701D3451E1B"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:snowy_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:spruce_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -1.5d
+			y: -2.0d
+			id: "21C1B2EC1955C118"
+			tasks: [{
+				id: "27CD40BFB9AFF44B"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:spruce_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "creeperoverhaul:swamp_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -1.5d
+			y: -1.0d
+			id: "3813615371ACA95B"
+			tasks: [{
+				id: "219F90F623A04288"
+				type: "kill"
+				disable_toast: true
+				entity: "creeperoverhaul:swamp_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "dungeons_mobs:icy_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -0.5d
+			y: -2.0d
+			id: "71E8717BC8C45BF7"
+			tasks: [{
+				id: "6C117828DF110919"
+				type: "kill"
+				disable_toast: true
+				entity: "dungeons_mobs:icy_creeper"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "graveyard:skeleton_creeper_spawn_egg"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -0.5d
+			y: -1.0d
+			id: "45FF0E38F86B4F45"
+			tasks: [{
+				id: "56D33EF1F389D895"
+				type: "kill"
+				disable_toast: true
+				entity: "graveyard:skeleton_creeper"
+				value: 1L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			subtitle: "Slay a Creeper of almost every type."
+			dependencies: [
+				"21C1B2EC1955C118"
+				"71E8717BC8C45BF7"
+				"4D1FCBE3AB6F3912"
+				"7C4CFE3C37EE3BFD"
+				"65CBFECB17757793"
+				"4350594C0354AF60"
+				"45FF0E38F86B4F45"
+				"4E6BCD7791807C76"
+				"5D79EAF3DBA77802"
+				"7D43D0109D7943BA"
+				"12871D08D8558848"
+				"520FC4FD470D9A2C"
+				"1C6A751F31BA8179"
+				"3813615371ACA95B"
+				"2E5B42AEEF728DDF"
+				"19EB21A474DCACED"
+				"347FB88683A032A6"
+				"0E0F381EB3ED8983"
+				"3B2FA94E0BD45307"
+			]
+			id: "0590E77F9E25A40F"
+			tasks: [{
+				id: "1B2459CE427A08DF"
+				type: "checkmark"
+				title: "Gotta Catch Em' All!"
+			}]
+			rewards: [
+				{
+					id: "4A0B962DC19A61C8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "6C76BA192F32B2FC"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "combat"
+					amount: 5
+				}
+				{
+					id: "592E468CDFE670FE"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "endurance"
+					amount: 5
+				}
+				{
+					id: "5DA13628192BF6F3"
+					type: "item"
+					item: {
+						id: "quark:forgotten_hat"
+						Count: 1b
+						tag: {
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 3.0f
+								}
+							}
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 4
+									id: "blast_protection"
+								}
+								{
+									lvl: 2
+									id: "protection"
+								}
+							]
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "5991F7D60FC06B2D"
+					type: "item"
+					item: {
+						id: "neapolitan:adzuki_beans"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 64
+				}
+				{
+					id: "7B15F68F481D49FE"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 10
+				}
+				{
+					id: "082CD15A315802BE"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_ingot"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -5.0d
+			subtitle: "Visit 15 waystones."
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "7996EDEB151ABE9E"
+			tasks: [{
+				id: "1E7324E96F57B25E"
+				type: "stat"
+				title: "I've been places."
+				stat: "waystones:waystone_activated"
+				value: 15
+			}]
+			rewards: [
+				{
+					id: "46A206516E034486"
+					type: "item"
+					item: {
+						id: "kacys_cosmetics:black_cat_helmet"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "4F83E64D475D9625"
+					type: "item"
+					item: {
+						id: "kacys_cosmetics:white_cat_helmet"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "2B640CB361CA51FE"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "7A4FB222E14E1B3A"
+			tasks: [{
+				id: "4F3A796CA9732E0E"
+				type: "dimension"
+				title: "It's hot in here, isn't it?"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [
+				{
+					id: "25CA22048020CED9"
+					type: "item"
+					item: {
+						id: "minecraft:packed_ice"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "2A763E89DCCF2B21"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:magma_cube_gate"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			dependencies: ["45FDFB87F0D3B4EA"]
+			id: "69EFACA838F48EB3"
+			tasks: [{
+				id: "047ED6C2F9599A84"
+				type: "dimension"
+				title: "A mysterious forest."
+				dimension: "twilightforest:twilight_forest"
+			}]
+			rewards: [{
+				id: "2430B3014F768F31"
+				type: "item"
+				item: {
+					id: "minecraft:diamond"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			dependencies: ["7A4FB222E14E1B3A"]
+			id: "45FDFB87F0D3B4EA"
+			tasks: [{
+				id: "320273EFB68EE9C4"
+				type: "dimension"
+				title: "What's that buzzing?"
+				dimension: "the_bumblezone:the_bumblezone"
+			}]
+			rewards: [{
+				id: "59CEFA78C9146E24"
+				type: "item"
+				item: {
+					id: "create:honey_bucket"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["69EFACA838F48EB3"]
+			id: "31A58D6F2C046B12"
+			tasks: [{
+				id: "61C25A753B872C97"
+				type: "dimension"
+				title: "And deeper still.."
+				dimension: "undergarden:undergarden"
+			}]
+			rewards: [{
+				id: "646B47DC5A91165C"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:enderman_gate"
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			dependencies: ["3CF3765FB4421D9C"]
+			invisible: true
+			secret: true
+			id: "7730E023BB1609F5"
+			tasks: [{
+				id: "5C6A4963D71030A8"
+				type: "kill"
+				entity: "minecraft:creeper"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "684A62F80B963A94"
+					type: "command"
+					title: "Surprise!"
+					team_reward: false
+					auto: "invisible"
+					command: "/execute at \"@p\" run summon weirdmobs:creeper_spider ~ ~ ~ {ActiveEffects:[{Id:14,Duration:1,Amplifier:1,ShowParticles:0b}],Attributes:[{Name:\"generic.armor\",Base:20f},{Name:\"generic.armor_toughness\",Base:8f},{Name:\"generic.max_health\",Base:100f},{Name:\"generic.movement_speed\",Base:1f}]}"
+					player_command: false
+				}
+				{
+					id: "5DA7C06E23B15282"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "combat"
+					amount: 3
+				}
+				{
+					id: "28F93AE4F479DDB5"
+					type: "xp_levels"
+					auto: "invisible"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			disable_toast: true
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["3B2FA94E0BD45307"]
+			invisible: true
+			secret: true
+			id: "3CF3765FB4421D9C"
+			tasks: [{
+				id: "72D80EF48C4EA70A"
+				type: "questsadditions:time"
+				disable_toast: true
+				secret: true
+				elapsedTime: 500L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.5d
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "2EFAAB01B823B370"
+			tasks: [{
+				id: "5CC3C8B2CD653F34"
+				type: "questsadditions:interaction"
+				entity: "whisperwoods:hidebehind"
+				nbt: { }
+				value: 3L
+				checkItem: false
+			}]
+		}
+		{
+			x: -7.0d
+			y: -4.0d
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "556C6ECE4B8B2DCB"
+			tasks: [{
+				id: "47C74EA570C89D53"
+				type: "stat"
+				icon: {
+					id: "born_in_chaos_v1:shattered_skull"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+				stat: "minecraft:deaths"
+				value: 1000
+			}]
+			rewards: [
+				{
+					id: "4EBFAEF221455719"
+					type: "item"
+					item: {
+						id: "born_in_chaos_v1:death_totem"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "783D09D3E4DC1935"
+					type: "item"
+					item: {
+						id: "tombstone:decorative_subaraki_grave"
+						Count: 1b
+						tag: {
+							model_texture: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "5D13356C7D8BA81F"
+					type: "item"
+					item: {
+						id: "tombstone:ankh_of_pray"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Lord of The Flies"
+			icon: {
+				id: "alexsmobs:spawn_egg_fly"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": { }
+				}
+			}
+			x: -6.0d
+			y: -3.5d
+			subtitle: "Kill 1000 Flies with an Iron Shovel"
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "7532E655FAC58578"
+			tasks: [{
+				id: "1C32062E493B9D56"
+				type: "questsadditions:killnbt"
+				title: "Kill 1000 Flies with an Iron Shovel"
+				icon: "alexsmobs:spawn_egg_fly"
+				entity: "alexsmobs:fly"
+				value: 100L
+				nbt: { }
+				checkItem: true
+				item: {
+					id: "minecraft:iron_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "24AD29A742827289"
+					type: "item"
+					item: {
+						id: "neapolitan:strawberry_milkshake"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "2A1523F8A52E1796"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 10
+				}
+				{
+					id: "2ADA34C831025DB2"
+					type: "item"
+					item: {
+						id: "alexsmobs:novelty_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -6.0d
+			subtitle: "Kill 100 Skeletons \\& Donate Some XP"
+			dependencies: ["3B2FA94E0BD45307"]
+			id: "0688781C4AF9964A"
+			tasks: [
+				{
+					id: "5BD835DF40061E6B"
+					type: "kill"
+					entity: "minecraft:skeleton"
+					value: 100L
+				}
+				{
+					id: "163FBFE8D877DF56"
+					type: "xp"
+					value: 30L
+					points: false
+				}
+			]
+			rewards: [
+				{
+					id: "6252A1EA860AC4A4"
+					type: "item"
+					auto: "disabled"
+					item: {
+						id: "minecraft:wolf_spawn_egg"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "6CC65723F473FDD9"
+					type: "item"
+					auto: "disabled"
+					item: {
+						id: "minecraft:bone"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+					count: 12
+				}
+				{
+					id: "728EF867467A1CED"
+					type: "item"
+					title: "You just got Dog!"
+					auto: "enabled"
+					item: {
+						id: "minecraft:bone_meal"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Click This To Fix Your Levels!"
+			x: 2.0d
+			y: -4.0d
+			subtitle: "Here click here!"
+			optional: true
+			incompatible: [
+				"6FB02C297CEBE7AD"
+				"0828727818245A0C"
+				"137E0098AF98AB64"
+				"0B0F062BA8CDC3C3"
+			]
+			id: "6989A70DFE5B9BBD"
+			tasks: [
+				{
+					id: "0BAB6EA10EE4A8CE"
+					type: "checkmark"
+					title: "Here, click here!"
+				}
+				{
+					id: "741D3C13681AC445"
+					type: "stat"
+					stat: "minecraft:play_time"
+					value: 1300000
+				}
+			]
+			rewards: [
+				{
+					id: "0E2CE5E72A55E661"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "combat"
+					amount: 30
+				}
+				{
+					id: "3EB509B51A40EDCE"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "endurance"
+					amount: 30
+				}
+				{
+					id: "51DBD42F7B5A2A48"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "mining"
+					amount: 30
+				}
+				{
+					id: "618AC3F1E5D04F2C"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "crafting"
+					amount: 30
+				}
+				{
+					id: "024F1E1E485C0888"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "woodcutting"
+					amount: 30
+				}
+				{
+					id: "02D0EA01DB98AEDF"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "smithing"
+					amount: 30
+				}
+				{
+					id: "21CABE111D326D5A"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "swimming"
+					amount: 30
+				}
+				{
+					id: "223A56C53F9C28AF"
+					type: "pmmo:levelreward"
+					auto: "invisible"
+					skill: "farming"
+					amount: 30
+				}
+			]
+		}
+		{
+			title: "ok but your cant be too high level"
+			x: 2.0d
+			y: -5.0d
+			optional: true
+			id: "6FB02C297CEBE7AD"
+			tasks: [
+				{
+					id: "0828727818245A0C"
+					type: "pmmo:skill"
+					title: "Combat Level too High!"
+					skill: "combat"
+					requiredLevel: 70
+				}
+				{
+					id: "0B0F062BA8CDC3C3"
+					type: "pmmo:skill"
+					title: "Too High in Endurance!"
+					skill: "endurance"
+					requiredLevel: 70
+				}
+				{
+					id: "137E0098AF98AB64"
+					type: "pmmo:skill"
+					title: "Too High in Crafting!"
+					skill: "crafting"
+					requiredLevel: 70
+				}
+			]
+		}
+		{
+			title: "A Worthy Sacrifice"
+			x: -5.0d
+			y: -4.0d
+			dependencies: ["3B2FA94E0BD45307"]
+			can_repeat: true
+			id: "3FF615E1EE55B923"
+			tasks: [
+				{
+					id: "6754AE7FC0753A45"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_golden_apple"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+				{
+					id: "25D982DBA7CF19CD"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": { }
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "29AC8A416DA73D33"
+					type: "command"
+					auto: "invisible"
+					command: "/effect give \"@p\" minecraft:saturation 120 4"
+					player_command: false
+				}
+				{
+					id: "0A8882CADCA86DCD"
+					type: "command"
+					auto: "invisible"
+					command: "/heal \"@p\""
+					player_command: false
+				}
+				{
+					id: "7EDCF3C7245A0AA6"
+					type: "toast"
+					title: "Restore Your Strength"
+					description: ""
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

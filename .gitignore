@@ -1,0 +1,12 @@
+*
+!*/
+
+# track this file
+!.gitignore
+
+# whitelist everything in ./config/
+!config/**
+!defaultconfigs/**
+!world/serverconfig/**
+!kubejs/**
+!scripts/**
