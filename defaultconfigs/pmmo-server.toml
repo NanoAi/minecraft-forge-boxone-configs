@@ -224,7 +224,7 @@
 					combat = 1.00041
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
-					combat = 0.01
+					combat = 0.001
 
 #Settings related to the Vein Miner
 [Vein_Miner]
