@@ -201,10 +201,10 @@
 		[Mob_Scaling.Formula.EXPONENTIAL_LEVELS]
 			#What is the x in: (x^([Per Level] * level))
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Power Base" = 1.104088404342588
+			"Power Base" = 1.1041
 			#What is the x in: ([Power Base]^(x * level))
 			#Range: 0.0 ~ 1.7976931348623157E308
-			"Per Level" = 1.0
+			"Per Level" = 0.8
 
 	#These settings control which skills affect scaling and the ratio for each skill
 	#minecraft:generic.max_health: 1 = half a heart, or 1 hitpoint
@@ -224,7 +224,7 @@
 					combat = 1.00041
 
 				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
-					combat = 0.001
+					combat = 0.0
 
 #Settings related to the Vein Miner
 [Vein_Miner]
