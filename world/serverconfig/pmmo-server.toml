@@ -16,7 +16,7 @@
 	#If your formula makes the required xp to get max level greater than
 	#pmmo can store, pmmo will replace your value with the actual max.
 	#Range: > 1
-	"Max Level" = 1000
+	"Max Level" = 500
 	#shold levels be determined using an exponential forumula?
 	"Use Exponential Formula" = true
 	#=====LEAVE -1 VALUE UNLESS YOU WANT STATIC LEVELS=====
@@ -215,16 +215,16 @@
 
 		[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"]
 
-			[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic"]
+		[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic"]
 
-				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".movement_speed]
-					combat = 0.0
+		[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".movement_speed]
+			combat = 0.0
 
-				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
-					combat = 1.00041
+		[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".attack_damage]
+			combat = 1.00041
 
-				[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
-					combat = 0.0
+		[Mob_Scaling.Scaling_Settings."Mob Scaling IDs and Ratios"."minecraft:generic".max_health]
+			combat = 0.001
 
 #Settings related to the Vein Miner
 [Vein_Miner]
@@ -240,4 +240,3 @@
 	"Vein Charge Modifier" = 1.0
 	#Tools in this list do not cause the vein miner to trigger
 	Vein_Blacklist = ["silentgear:saw"]
-
